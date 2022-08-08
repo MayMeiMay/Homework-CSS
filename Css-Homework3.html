@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work 3</title>
+    <style>
+ body{
+    font-family: Helvetica, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 3.5em;
+}
+.header h1{
+    color: #1d5fee;
+}
+
+.header p {
+    font-size: 1.7em;
+}
+.header{
+    margin-left: 150px;
+    margin-right: 100px;
+    font-family: inherit;
+    
+   
+}
+
+.container{
+    height: 100vh;
+    background-color:#dfe3ee81;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
+
+.input{
+    width: 370px;
+    height: 345px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 5px 10px 18px #888888;
+    border-radius: 10px;
+}
+.box{
+    margin-right: 150px;
+}
+.box p {
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.box p a {
+    color:black;
+    margin-right: 2px;
+    text-decoration:  underline;
+    font-weight: 10px;
+}
+input[type=text]{
+    display: inline-block;
+    width: 90%;
+    margin: 10px 0;
+    padding: 18px 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+input[type=text]:focus{
+    border: 1px solid rgba(74, 74, 243, 0.753);
+    outline: none;
+    box-shadow: 2px 2px 2px #696be0c7;
+}
+
+input[type=button]{
+    width: 90%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color:#1877f2 ;
+    font-size: 1.4em;
+    color: white;
+    outline: none;
+}
+input[type=button]:hover{
+    background-color: #1876f2e1 ; 
+    cursor: pointer;
+    
+    
+}
+.l-1 {
+    display: inline-block;
+    margin: 8px 0;
+    text-decoration: none;
+}
+.l-1:hover{
+    text-decoration: underline;
+}
+hr{
+    margin: 8px 0;
+}
+.l-2{
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    background-color: rgba(95, 243, 36, 0.842);
+    width: 50% ;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2em;
+   
+}
+.l-2:hover{
+    background-color: rgba(95, 243, 36, 0.986);
+}
+::placeholder {
+    font-size:1.5em;
+}
+hr{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+
+/* footer */
+
+.footer{
+    height: 30vh;
+    background-color:#ffffff;
+}
+.la-box{
+    margin: 25px 200px  ;
+    width: auto;
+    color: rgb(143, 140, 140);
+    font-size: 15px;
+    
+}
+.la-box a{
+    display: inline-block;
+    margin: 3px;
+    text-decoration: none;
+    color: rgb(143, 140, 140);
+    font-size: 15px;
+}
+
+.la-box button{
+    width: 25px;
+}
+.la-box button:hover{
+   cursor: pointer;
+}
+
+.la-box a:hover{
+    text-decoration: underline;
+}
+.la-box hr{
+    margin: 10px 0;
+    width: 100%;
+}
+.la-box p {
+    margin: 30px 0;
+}
+
+@media (max-width:900px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .box{
+        margin: 0 100px;
+    }
+
+    .header{
+        width: 370px;
+        margin: 0 100px;
+        text-align: center;
+    }
+    .la-box{
+        margin: 25px 10px  ;
+        width: auto;
+    }
+
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>facebook</h1>
+            <p>Facebook ช่วยคุณเชื่อมต่อและแชร์กับผู้คนมากมายรอบตัวคุณ</p>
+        </div>
+        <div class="box">
+            <div class="input">
+                <form action="">
+                    <input type="text" placeholder="อีเมล์หรือหมายเลขโทรศัพท์มือถือ">
+                    <br>
+                    <input type="text" placeholder="รหัสผ่าน">
+                    <br>
+                    <input type="button" value="เข้าสู่ระบบ">
+                </form>
+                <a href="#" class="l-1">ลืมรหัสผ่านใช่หรือไม่</a>
+                <hr>
+                <a href="#" class="l-2">สร้างบัญชีใหม่</a>
+            </div>
+            <p><a href="#">สร้างเพจ</a>สำหรับบุคคลมีชื่อเสียง วงดนตรี หรือธุรกิจ</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="la-box">
+            <a href="#">ภาษาไทย</a>
+            <a href="#">English (UK)</a>
+            <a href="#">本語</a>
+            <a href="#">中文(简体)</a>
+            <a href="#">Tiếng Việt</a>
+            <a href="#">Français (France)</a>
+            <a href="#">Deutsch</a>
+            <a href="#">Русский</a>
+            <a href="#">Español</a>
+            <a href="#">Português (Brasil)</a>
+            <a href="#">Italiano</a>
+            <button>+</button>
+            <hr>
+            <a href="#">สมัคร</a>
+            <a href="#">เข้าสู่ระบบ</a>
+            <a href="#">Messenger
+            <a href="#">Facebook Lite</a>
+            <a href="#">Watch</a>
+            <a href="#">ผู้คน</a>
+            <a href="#">เพจ  </a> 
+            <a href="#">หมวดหมู่เพจ</a>
+            <a href="#">สถานที่</a>
+            <a href="#">เกม</a>
+            <a href="#">ตำแหน่งที่ตั้ง</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Facebook Pay</a>
+            <a href="#">กลุ่ม</a>
+            <a href="#">งาน </a>  
+            <a href="#">Oculus</a>
+            <a href="#">เกี่ยวกับ</a>
+            <a href="#">สร้างโฆษณา</a>
+            <a href="#">สร้างเพจ</a>
+            <a href="#">ผู้พัฒนา</a>
+            <a href="#">ร่วมงานกับ Facebook</a>
+            <a href="#">ความเป็นส่วนตัว</a>
+            <a href="#">คุกกี้  </a>
+            <a href="#">ตัวเลือกโฆษณา</a>
+            <a href="#">เงื่อนไข</a>
+            <a href="#">ความช่วยเหลือการตั้งค่า</a>
+            <P>  Facebook © 2021</P> 
+        </div>
+    </div>
+</body>
+</html>
